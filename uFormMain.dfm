@@ -20,6 +20,8 @@ object FormMain: TFormMain
     Height = 41
     Align = alTop
     Caption = 'Trabalhando com Eventos no Delphi'
+    Color = clWindow
+    ParentBackground = False
     TabOrder = 0
     ExplicitLeft = -32
     ExplicitTop = 128
@@ -35,6 +37,7 @@ object FormMain: TFormMain
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'Aba 1'
+      OnShow = TabSheet1Show
     end
     object TabSheet2: TTabSheet
       Caption = 'Aba 2'

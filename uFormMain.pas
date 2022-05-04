@@ -13,6 +13,7 @@ type
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
     TabSheet3: TTabSheet;
+    procedure TabSheet1Show(Sender: TObject);
   private
     { Private declarations }
   public
@@ -25,5 +26,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFormMain.TabSheet1Show(Sender: TObject);
+begin
+  PnlTitulo.Caption := 'Mudando o caption do Panel com onShow';
+  PnlTitulo.Color := $00808000;
+  PnlTitulo.Font.Color := $003a7cff
+end;
 
 end.

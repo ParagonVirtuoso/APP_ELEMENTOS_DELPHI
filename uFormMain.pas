@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.StdCtrls,
+  System.ImageList, Vcl.ImgList;
 
 type
   TFormMain = class(TForm)
@@ -17,6 +18,7 @@ type
     Label1: TLabel;
     EdtCaracteres: TEdit;
     BtnExibirDataHora: TButton;
+    ImageList1: TImageList;
     procedure TabSheet1Show(Sender: TObject);
   private
     { Private declarations }

@@ -20,6 +20,7 @@ type
     BtnExibirDataHora: TButton;
     ImageList1: TImageList;
     procedure TabSheet1Show(Sender: TObject);
+    procedure EdtCaracteresEnter(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,11 +34,16 @@ implementation
 
 {$R *.dfm}
 
+procedure TFormMain.EdtCaracteresEnter(Sender: TObject);
+begin
+  EdtCaracteres.Color := $00E8E8E8;
+end;
+
 procedure TFormMain.TabSheet1Show(Sender: TObject);
 begin
   PnlTitulo.Caption := 'Mudando o caption do Panel com onShow';
   PnlTitulo.Color := $00808000;
-  PnlTitulo.Font.Color := $003a7cff
+  PnlTitulo.Font.Color := $003a7cff;
 end;
 
 end.

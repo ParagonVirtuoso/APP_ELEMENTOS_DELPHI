@@ -81,6 +81,7 @@ object FormMain: TFormMain
           TabOrder = 0
           TextHint = 'Digite 4 caracteres'
           OnEnter = EdtCaracteresEnter
+          OnExit = EdtCaracteresExit
         end
       end
       object BtnExibirDataHora: TButton

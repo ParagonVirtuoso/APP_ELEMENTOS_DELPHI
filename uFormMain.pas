@@ -21,9 +21,12 @@ type
     EdtCaracteres: TEdit;
     BtnExibirDataHora: TButton;
     ImageList1: TImageList;
+    Panel1: TPanel;
+    Button1: TButton;
     procedure TabSheet1Show(Sender: TObject);
     procedure EdtCaracteresEnter(Sender: TObject);
     procedure EdtCaracteresExit(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,6 +39,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFormMain.Button1Click(Sender: TObject);
+begin
+  PgCntrlPrincipal.ActivePageIndex := 1;
+
+end;
 
 procedure TFormMain.EdtCaracteresEnter(Sender: TObject);
 begin

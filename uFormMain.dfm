@@ -2,8 +2,8 @@ object FormMain: TFormMain
   Left = 0
   Top = 0
   Caption = 'Eventos e Componentes Visuais'
-  ClientHeight = 348
-  ClientWidth = 698
+  ClientHeight = 479
+  ClientWidth = 727
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
   Font.Color = clNavy
@@ -16,19 +16,20 @@ object FormMain: TFormMain
   object PnlTitulo: TPanel
     Left = 0
     Top = 0
-    Width = 698
+    Width = 727
     Height = 41
     Align = alTop
     Caption = 'Trabalhando com Eventos no Delphi'
     Color = clWindow
     ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 698
   end
   object PgCntrlPrincipal: TPageControl
     Left = 0
     Top = 41
-    Width = 698
-    Height = 307
+    Width = 727
+    Height = 438
     ActivePage = TabSheet1
     Align = alClient
     Font.Charset = ANSI_CHARSET
@@ -38,6 +39,8 @@ object FormMain: TFormMain
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
+    ExplicitWidth = 698
+    ExplicitHeight = 307
     object TabSheet1: TTabSheet
       Caption = 'Aba 1'
       OnShow = TabSheet1Show
@@ -85,7 +88,7 @@ object FormMain: TFormMain
         end
       end
       object BtnExibirDataHora: TButton
-        Left = 344
+        Left = 392
         Top = 68
         Width = 161
         Height = 49
@@ -104,6 +107,35 @@ object FormMain: TFormMain
         ShowHint = False
         StylusHotImageIndex = 1
         TabOrder = 1
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 355
+        Width = 719
+        Height = 41
+        Align = alBottom
+        TabOrder = 2
+        ExplicitLeft = 83
+        ExplicitTop = 200
+        ExplicitWidth = 185
+        object Button1: TButton
+          Left = 680
+          Top = 1
+          Width = 38
+          Height = 39
+          Align = alRight
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clNavy
+          Font.Height = -13
+          Font.Name = 'Times New Roman'
+          Font.Style = []
+          ImageIndex = 2
+          ImageMargins.Left = 10
+          Images = ImageList1
+          ParentFont = False
+          TabOrder = 0
+          OnClick = Button1Click
+        end
       end
     end
     object TabSheet2: TTabSheet

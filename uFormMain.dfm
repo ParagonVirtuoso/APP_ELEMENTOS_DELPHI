@@ -2,8 +2,8 @@ object FormMain: TFormMain
   Left = 0
   Top = 0
   Caption = 'Eventos e Componentes Visuais'
-  ClientHeight = 479
-  ClientWidth = 727
+  ClientHeight = 482
+  ClientWidth = 733
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
   Font.Color = clNavy
@@ -16,20 +16,21 @@ object FormMain: TFormMain
   object PnlTitulo: TPanel
     Left = 0
     Top = 0
-    Width = 727
+    Width = 733
     Height = 41
     Align = alTop
     Caption = 'Trabalhando com Eventos no Delphi'
     Color = clWindow
     ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 727
   end
   object PgCntrlPrincipal: TPageControl
     Left = 0
     Top = 41
-    Width = 727
-    Height = 438
-    ActivePage = TabSheet1
+    Width = 733
+    Height = 441
+    ActivePage = TabSheet3
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clNavy
@@ -38,6 +39,8 @@ object FormMain: TFormMain
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
+    ExplicitWidth = 727
+    ExplicitHeight = 438
     object TabSheet1: TTabSheet
       Caption = 'Aba 1'
       OnShow = TabSheet1Show
@@ -107,13 +110,15 @@ object FormMain: TFormMain
       end
       object Panel1: TPanel
         Left = 0
-        Top = 355
-        Width = 719
+        Top = 358
+        Width = 725
         Height = 41
         Align = alBottom
         TabOrder = 2
+        ExplicitTop = 355
+        ExplicitWidth = 719
         object Button1: TButton
-          Left = 680
+          Left = 686
           Top = 1
           Width = 38
           Height = 39
@@ -129,6 +134,7 @@ object FormMain: TFormMain
           ParentFont = False
           TabOrder = 0
           OnClick = Button1Click
+          ExplicitLeft = 680
         end
       end
     end
@@ -219,8 +225,8 @@ object FormMain: TFormMain
       end
       object Panel2: TPanel
         Left = 0
-        Top = 355
-        Width = 719
+        Top = 358
+        Width = 725
         Height = 41
         Align = alBottom
         TabOrder = 4
@@ -240,7 +246,7 @@ object FormMain: TFormMain
           OnClick = Button4Click
         end
         object Button5: TButton
-          Left = 678
+          Left = 684
           Top = 1
           Width = 40
           Height = 39
@@ -257,14 +263,113 @@ object FormMain: TFormMain
     object TabSheet3: TTabSheet
       Caption = 'Aba 3'
       ImageIndex = 2
+      object Label3: TLabel
+        Left = 0
+        Top = 0
+        Width = 725
+        Height = 23
+        Align = alTop
+        Caption = 'Observa'#231#227'o'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Comic Sans MS'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitWidth = 90
+      end
+      object Memo1: TMemo
+        AlignWithMargins = True
+        Left = 3
+        Top = 33
+        Width = 719
+        Height = 291
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Align = alClient
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        ParentFont = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ExplicitLeft = 0
+        ExplicitTop = 27
+        ExplicitHeight = 369
+      end
+      object Panel4: TPanel
+        AlignWithMargins = True
+        Left = 5
+        Top = 344
+        Width = 715
+        Height = 45
+        Margins.Left = 5
+        Margins.Top = 10
+        Margins.Right = 5
+        Margins.Bottom = 10
+        Align = alBottom
+        UseDockManager = False
+        Enabled = False
+        ShowCaption = False
+        TabOrder = 1
+        ExplicitLeft = 50
+        object Button8: TButton
+          AlignWithMargins = True
+          Left = 4
+          Top = 4
+          Width = 40
+          Height = 37
+          Align = alLeft
+          ImageIndex = 1
+          ImageMargins.Left = 10
+          Images = ImageList1
+          TabOrder = 0
+          OnClick = Button8Click
+          ExplicitLeft = 0
+          ExplicitTop = 1
+          ExplicitHeight = 39
+        end
+      end
+      object Button6: TButton
+        AlignWithMargins = True
+        Left = 558
+        Top = 350
+        Width = 149
+        Height = 34
+        Caption = 'Selecionar tudo'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Comic Sans MS'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object Button7: TButton
+        AlignWithMargins = True
+        Left = 432
+        Top = 350
+        Width = 106
+        Height = 34
+        Caption = 'Limpar'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Comic Sans MS'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
     end
   end
   object ImageList1: TImageList
     BlendColor = clWhite
     BkColor = clWhite
     ShareImages = True
-    Left = 692
-    Top = 391
+    Left = 684
+    Top = 7
     Bitmap = {
       494C010103001800040010001000FFFFFF00FF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010

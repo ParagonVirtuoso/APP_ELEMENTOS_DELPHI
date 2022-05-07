@@ -31,6 +31,12 @@ type
     Panel2: TPanel;
     Button4: TButton;
     Button5: TButton;
+    Memo1: TMemo;
+    Label3: TLabel;
+    Button6: TButton;
+    Button7: TButton;
+    Panel4: TPanel;
+    Button8: TButton;
     procedure TabSheet1Show(Sender: TObject);
     procedure EdtCaracteresEnter(Sender: TObject);
     procedure EdtCaracteresExit(Sender: TObject);
@@ -39,6 +45,7 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -83,6 +90,11 @@ end;
 procedure TFormMain.Button5Click(Sender: TObject);
 begin
   PgCntrlPrincipal.ActivePageIndex := 2;
+end;
+
+procedure TFormMain.Button8Click(Sender: TObject);
+begin
+  PgCntrlPrincipal.ActivePageIndex := 1;
 end;
 
 procedure TFormMain.EdtCaracteresEnter(Sender: TObject);

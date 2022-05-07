@@ -30,7 +30,7 @@ object FormMain: TFormMain
     Top = 41
     Width = 733
     Height = 441
-    ActivePage = TabSheet3
+    ActivePage = TabSheet1
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clNavy

@@ -11,6 +11,8 @@ object FrmDataHora: TFrmDataHora
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -1194,5 +1196,11 @@ object FrmDataHora: TFrmDataHora
       ExplicitTop = 24
       ExplicitWidth = 142
     end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 592
+    Top = 8
   end
 end

@@ -186,8 +186,9 @@ object FormMain: TFormMain
         Height = 25
         Caption = '>>'
         TabOrder = 1
+        OnClick = Button2Click
       end
-      object LstBxItensSelecionado: TListBox
+      object LstBxItensSelecionados: TListBox
         Left = 441
         Top = 48
         Width = 251

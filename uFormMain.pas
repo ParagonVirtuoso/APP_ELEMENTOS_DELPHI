@@ -26,11 +26,12 @@ type
     RGListaOpcoes: TRadioGroup;
     Button2: TButton;
     Label2: TLabel;
-    LstBxItensSelecionado: TListBox;
+    LstBxItensSelecionados: TListBox;
     procedure TabSheet1Show(Sender: TObject);
     procedure EdtCaracteresEnter(Sender: TObject);
     procedure EdtCaracteresExit(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,6 +49,18 @@ procedure TFormMain.Button1Click(Sender: TObject);
 begin
   PgCntrlPrincipal.ActivePageIndex := 1;
 
+end;
+
+procedure TFormMain.Button2Click(Sender: TObject);
+begin
+  if RGListaOpcoes.ItemIndex >= 0 then
+  begin
+    LstBxItensSelecionados.Items.Add
+      (RGListaOpcoes.Items[RGListaOpcoes.ItemIndex]);
+    RGListaOpcoes.ItemIndex := -1;
+  end
+  else
+    MessageDlg('Você não selecionou' + 'nenhum item', mtError, [mbOK], 0);
 end;
 
 procedure TFormMain.EdtCaracteresEnter(Sender: TObject);

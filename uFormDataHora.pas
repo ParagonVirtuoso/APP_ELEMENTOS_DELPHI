@@ -3,7 +3,8 @@ unit uFormDataHora;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
   Vcl.Imaging.pngimage;
 
@@ -39,14 +40,12 @@ end;
 procedure TFrmDataHora.FormShow(Sender: TObject);
 begin
   Timer1.Enabled := True;
-  LblDataHora.Caption := FormatDateTime
-         ('dd/mm/yyyy hh:mm:ss', now);
+  LblDataHora.Caption := FormatDateTime('dd/mm/yyyy hh:mm:ss', now);
 end;
 
 procedure TFrmDataHora.Timer1Timer(Sender: TObject);
 begin
-  LblDataHora.Caption := FormatDateTime
-         ('dd/mm/yyyy hh:mm:ss', now);
+  LblDataHora.Caption := FormatDateTime('dd/mm/yyyy hh:mm:ss', now);
 end;
 
 end.

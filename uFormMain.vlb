@@ -64,9 +64,6 @@ Coordinates=10,280,59,58
 [Button7]
 Coordinates=207,144,59,58
 
-[Memo1]
-Coordinates=313,212,64,58
-
 [Button8]
 Coordinates=276,144,59,58
 
@@ -79,4 +76,7 @@ Coordinates=438,10,53,58
 []
 Coordinates=117,212,55,58
 Visible=True
+
+[MmObservacao]
+Coordinates=313,212,64,58
 

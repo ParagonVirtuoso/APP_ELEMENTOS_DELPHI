@@ -278,7 +278,7 @@ object FormMain: TFormMain
         ParentFont = False
         ExplicitWidth = 90
       end
-      object Memo1: TMemo
+      object MmObservacao: TMemo
         AlignWithMargins = True
         Left = 3
         Top = 33
@@ -334,7 +334,7 @@ object FormMain: TFormMain
       end
       object Button6: TButton
         AlignWithMargins = True
-        Left = 558
+        Left = 445
         Top = 350
         Width = 149
         Height = 34
@@ -346,10 +346,11 @@ object FormMain: TFormMain
         Font.Style = []
         ParentFont = False
         TabOrder = 2
+        OnClick = Button6Click
       end
       object Button7: TButton
         AlignWithMargins = True
-        Left = 432
+        Left = 600
         Top = 350
         Width = 106
         Height = 34
@@ -361,6 +362,7 @@ object FormMain: TFormMain
         Font.Style = []
         ParentFont = False
         TabOrder = 3
+        OnClick = Button7Click
       end
     end
   end

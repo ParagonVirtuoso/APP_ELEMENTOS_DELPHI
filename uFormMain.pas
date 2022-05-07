@@ -31,7 +31,7 @@ type
     Panel2: TPanel;
     Button4: TButton;
     Button5: TButton;
-    Memo1: TMemo;
+    MmObservacao: TMemo;
     Label3: TLabel;
     Button6: TButton;
     Button7: TButton;
@@ -46,6 +46,8 @@ type
     procedure Button5Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -90,6 +92,17 @@ end;
 procedure TFormMain.Button5Click(Sender: TObject);
 begin
   PgCntrlPrincipal.ActivePageIndex := 2;
+end;
+
+procedure TFormMain.Button6Click(Sender: TObject);
+begin
+ MmObservacao.SelectAll;
+ MmObservacao.SetFocus;
+end;
+
+procedure TFormMain.Button7Click(Sender: TObject);
+begin
+  MmObservacao.Lines.Clear;
 end;
 
 procedure TFormMain.Button8Click(Sender: TObject);

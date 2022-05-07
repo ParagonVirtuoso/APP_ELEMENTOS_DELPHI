@@ -29,7 +29,7 @@ object FormMain: TFormMain
     Top = 41
     Width = 727
     Height = 438
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clNavy
@@ -217,6 +217,42 @@ object FormMain: TFormMain
         TabOrder = 3
         OnClick = Button3Click
       end
+      object Panel2: TPanel
+        Left = 0
+        Top = 355
+        Width = 719
+        Height = 41
+        Align = alBottom
+        TabOrder = 4
+        ExplicitLeft = 176
+        ExplicitTop = 320
+        ExplicitWidth = 185
+        object Button4: TButton
+          Left = 1
+          Top = 1
+          Width = 40
+          Height = 39
+          Align = alLeft
+          ImageIndex = 1
+          ImageMargins.Left = 10
+          Images = ImageList1
+          TabOrder = 0
+          OnClick = Button4Click
+        end
+        object Button5: TButton
+          Left = 678
+          Top = 1
+          Width = 40
+          Height = 39
+          Align = alRight
+          ImageIndex = 2
+          ImageMargins.Left = 10
+          Images = ImageList1
+          TabOrder = 1
+          OnClick = Button5Click
+          ExplicitLeft = 680
+        end
+      end
     end
     object TabSheet3: TTabSheet
       Caption = 'Aba 3'
@@ -228,7 +264,7 @@ object FormMain: TFormMain
     BkColor = clWhite
     ShareImages = True
     Left = 692
-    Top = 447
+    Top = 391
     Bitmap = {
       494C010103001800040010001000FFFFFF00FF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010

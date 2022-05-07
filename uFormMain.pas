@@ -28,12 +28,17 @@ type
     Label2: TLabel;
     LstBxItensSelecionados: TListBox;
     Button3: TButton;
+    Panel2: TPanel;
+    Button4: TButton;
+    Button5: TButton;
     procedure TabSheet1Show(Sender: TObject);
     procedure EdtCaracteresEnter(Sender: TObject);
     procedure EdtCaracteresExit(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -68,6 +73,16 @@ end;
 procedure TFormMain.Button3Click(Sender: TObject);
 begin
   LstBxItensSelecionados.Items.Clear;
+end;
+
+procedure TFormMain.Button4Click(Sender: TObject);
+begin
+  PgCntrlPrincipal.ActivePageIndex := 0;
+end;
+
+procedure TFormMain.Button5Click(Sender: TObject);
+begin
+  PgCntrlPrincipal.ActivePageIndex := 2;
 end;
 
 procedure TFormMain.EdtCaracteresEnter(Sender: TObject);

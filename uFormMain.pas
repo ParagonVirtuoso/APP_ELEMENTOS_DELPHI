@@ -23,6 +23,10 @@ type
     ImageList1: TImageList;
     Panel1: TPanel;
     Button1: TButton;
+    RGListaOpcoes: TRadioGroup;
+    Button2: TButton;
+    Label2: TLabel;
+    LstBxItensSelecionado: TListBox;
     procedure TabSheet1Show(Sender: TObject);
     procedure EdtCaracteresEnter(Sender: TObject);
     procedure EdtCaracteresExit(Sender: TObject);

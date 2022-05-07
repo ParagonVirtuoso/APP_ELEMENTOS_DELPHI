@@ -23,14 +23,13 @@ object FormMain: TFormMain
     Color = clWindow
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 698
   end
   object PgCntrlPrincipal: TPageControl
     Left = 0
     Top = 41
     Width = 727
     Height = 438
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clNavy
@@ -39,8 +38,6 @@ object FormMain: TFormMain
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
-    ExplicitWidth = 698
-    ExplicitHeight = 307
     object TabSheet1: TTabSheet
       Caption = 'Aba 1'
       OnShow = TabSheet1Show
@@ -115,9 +112,6 @@ object FormMain: TFormMain
         Height = 41
         Align = alBottom
         TabOrder = 2
-        ExplicitLeft = 83
-        ExplicitTop = 200
-        ExplicitWidth = 185
         object Button1: TButton
           Left = 680
           Top = 1
@@ -147,6 +141,66 @@ object FormMain: TFormMain
       Font.Style = [fsBold]
       ImageIndex = 1
       ParentFont = False
+      object Label2: TLabel
+        Left = 441
+        Top = 32
+        Width = 122
+        Height = 17
+        Caption = 'Itens selecionados'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Times New Roman'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RGListaOpcoes: TRadioGroup
+        Left = 3
+        Top = 32
+        Width = 270
+        Height = 193
+        Caption = 'Selecione uma das op'#231#245'es'
+        Columns = 3
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clNavy
+        Font.Height = -15
+        Font.Name = 'Times New Roman'
+        Font.Style = [fsBold]
+        Items.Strings = (
+          'Python'
+          'PHP'
+          'C'
+          'C++'
+          'C#'
+          'Dart'
+          'Delphi'
+          'Java'
+          '.NET')
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Button2: TButton
+        Left = 328
+        Top = 112
+        Width = 75
+        Height = 25
+        Caption = '>>'
+        TabOrder = 1
+      end
+      object LstBxItensSelecionado: TListBox
+        Left = 441
+        Top = 48
+        Width = 251
+        Height = 177
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clRed
+        Font.Height = -15
+        Font.Name = 'Comic Sans MS'
+        Font.Style = [fsBold]
+        ItemHeight = 21
+        ParentFont = False
+        TabOrder = 2
+      end
     end
     object TabSheet3: TTabSheet
       Caption = 'Aba 3'
@@ -157,8 +211,8 @@ object FormMain: TFormMain
     BlendColor = clWhite
     BkColor = clWhite
     ShareImages = True
-    Left = 660
-    Top = 79
+    Left = 692
+    Top = 447
     Bitmap = {
       494C010103001800040010001000FFFFFF00FF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010

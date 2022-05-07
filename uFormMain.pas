@@ -27,11 +27,13 @@ type
     Button2: TButton;
     Label2: TLabel;
     LstBxItensSelecionados: TListBox;
+    Button3: TButton;
     procedure TabSheet1Show(Sender: TObject);
     procedure EdtCaracteresEnter(Sender: TObject);
     procedure EdtCaracteresExit(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,6 +63,11 @@ begin
   end
   else
     MessageDlg('Você não selecionou' + 'nenhum item', mtError, [mbOK], 0);
+end;
+
+procedure TFormMain.Button3Click(Sender: TObject);
+begin
+  LstBxItensSelecionados.Items.Clear;
 end;
 
 procedure TFormMain.EdtCaracteresEnter(Sender: TObject);

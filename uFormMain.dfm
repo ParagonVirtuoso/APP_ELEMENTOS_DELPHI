@@ -202,6 +202,21 @@ object FormMain: TFormMain
         ParentFont = False
         TabOrder = 2
       end
+      object Button3: TButton
+        Left = 584
+        Top = 240
+        Width = 75
+        Height = 25
+        Caption = 'Limpar'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Button3Click
+      end
     end
     object TabSheet3: TTabSheet
       Caption = 'Aba 3'

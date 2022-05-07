@@ -107,6 +107,7 @@ object FormMain: TFormMain
         ShowHint = False
         StylusHotImageIndex = 1
         TabOrder = 1
+        OnClick = BtnExibirDataHoraClick
       end
       object Panel1: TPanel
         Left = 0

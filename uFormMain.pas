@@ -7,7 +7,7 @@ uses
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls,
   Vcl.StdCtrls,
-  System.ImageList, Vcl.ImgList;
+  System.ImageList, Vcl.ImgList, uFormDataHora;
 
 type
   TFormMain = class(TForm)
@@ -48,6 +48,7 @@ type
     procedure Button8Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
+    procedure BtnExibirDataHoraClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,6 +61,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFormMain.BtnExibirDataHoraClick(Sender: TObject);
+begin
+ FrmDataHora.ShowModal;
+end;
 
 procedure TFormMain.Button1Click(Sender: TObject);
 begin
